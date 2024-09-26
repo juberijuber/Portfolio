@@ -9,7 +9,7 @@
 a{
   text-decoration: none ;
   color:#fff;
-  transition:0.3s; 
+  transition:0.2s; 
 }
 ul{
   list-style:none;
@@ -52,32 +52,9 @@ body{
   display:flex;
   justify-content: space-between;
   align-items: center;
-  /* padding-bottom: 2rem; */
 } 
-.logo {
-  display: flex;
-  align-items: center;
-  position: relative; 
-  text-transform: uppercase;
-  font-size: 26px;
-  font-weight: 700;
-}
 
-.logo .fa-bolt {
-  color: #fed700;
-  font-size: 19.5px;
-  position: absolute; 
-  top: 60%;
-  left: 100%; 
-  transform: translate(-50%, -50%); 
-  z-index: 1; 
-}
 
-.signature {
-  width: 100px; 
-  height:auto; 
-  margin-right: 10px; 
-}
 
 .header ul li:first-child {
   margin-right: auto; 
@@ -93,12 +70,15 @@ body{
 .header ul li a{
   text-transform: capitalize;
   display: block;
+  
+  
 }
 .header ul li a.active{
   color: #fed700;
 } 
 .header ul li a:hover{
   color:#fed700;
+  
 }
 .header .menu_icon{
   color:#fff;
@@ -133,10 +113,17 @@ body{
  width: 300px;
  height: 300px;
  border-radius: 50%;
- overflow: hidden;
+ overflow:hidden;
  border: 15px solid #444444;
- box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5);
+ 
+ box-shadow: 0 0 25px #ffffff;
  transition: all 0.5s ease; /* Smooth transition for scaling */
+ 
+
+}
+.FirstElement .profile-photo:hover{
+  box-shadow: 0 0 50px #fff700;
+  
 }
 
 .profile-photo img {
@@ -147,6 +134,7 @@ body{
 
 .FirstElement .profile-photo img:hover {
  transform: scale(1.2); /* Hover scaling effect */
+ 
 }
 
 .profile-text {
