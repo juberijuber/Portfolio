@@ -86,6 +86,49 @@ body{
   cursor: pointer;
   display: none;
 }
+/*--------------------------Nav-----------------------*/
+
+.navbar a {
+  font-size: 18px;
+  color: #e1e1e1;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  text-decoration: none; 
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+.navbar a:focus,
+.navbar a:hover {
+  color: #fff;
+}
+
+.navbar a:focus:after,
+.navbar a:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.navbar a:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
 
 
 /*---------------------------HomePage--------------------------*/
@@ -240,12 +283,18 @@ body{
   margin-right: 7px;
   border-radius: 30px;
   border: 2px solid #e5e5e5;
-  box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
-}
-.btn.active{
-  border-color: #fed700;
+  box-shadow: 0 5px 5px #d5d5d5;
 }
 
+.btn:hover,
+:focus {
+  color: #ffffff;
+  background: #fed700;  
+  border: 1px solid #fed700;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 5px #fed700, 0 0 5px #fed700, 0 0 5px #fed700,
+    0 0 25px #ffffff;
+}
 
 /*---------------------------Education & Internship---------------------------*/
 
