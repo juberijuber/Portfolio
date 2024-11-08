@@ -6,11 +6,6 @@
   box-sizing:border-box;
   scroll-behavior:smooth;
 }
-a{
-  text-decoration: none ;
-  color:#fff;
-  transition:0.2s; 
-}
 ul{
   list-style:none;
 }
@@ -84,7 +79,7 @@ body{
   color:#fff;
   font-size: 18px;
   cursor: pointer;
-  display: none;
+  display:none;
 }
 /*--------------------------Nav-----------------------*/
 
@@ -93,7 +88,7 @@ body{
   color: #e1e1e1;
   font-family: inherit;
   font-weight: 800;
-  cursor: pointer;
+  cursor:pointer;
   position: relative;
   border: none;
   background: none;
@@ -206,7 +201,7 @@ body{
 
 .profile-text .social {
  display: flex;
- gap: 10px; /* Adds spacing between icons */
+ gap: 20px; /* Adds spacing between icons */
 }
 
 .profile-text .social i {
@@ -286,13 +281,18 @@ body{
   box-shadow: 0 5px 5px #d5d5d5;
 }
 
-.btn:hover,
-:focus {
+.btn:hover {
   color: #ffffff;
   border: 1px solid #fed700;
   text-shadow: 0 0 5px #000000, 0 0 20px #ffffff, 0 0 20px #ffffff;
   box-shadow: 0 0 5px #fed700, 0 0 5px #fed700, 0 0 5px #fed700,
     0 0 25px #ffffff;
+}
+.btn-group a{
+  
+  text-decoration: none ;
+  transition:0.1s; 
+
 }
 
 /*---------------------------Education & Internship---------------------------*/
@@ -441,30 +441,89 @@ body{
 
 
 /*---------------------------Contact Me---------------------------*/
-.contact-content{
-  padding: 100px 0;
+.contact-content {
+  padding: 80px 20px; /* Reduced padding for tighter layout */
   color: #fff;
   text-align: center;
+  background-color: #1e1e1e; /* Darker background for a sleek look */
 }
-.contact-content .contact-title h4{
-  font-size: 40px;
+
+.contact-content .contact-title h4 {
+  font-size: 34px; /* Slightly smaller for a more professional tone */
+  font-weight: 600; /* Use font-weight for boldness instead of size */
   text-transform: capitalize;
   color: #fed700;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
+  letter-spacing: 0.5px; /* Subtle letter-spacing for readability */
 }
-.contact-content .contact-title p{
-  padding-bottom: 20px;
+
+.contact-content .contact-title p {
+  padding-bottom: 20px; 
+  font-size: 16px; /* Standardized font size for consistency */
+  color: #ffffff; /* Lighter color for body text to reduce eye strain */
+  line-height: 1.6; /* Increased line-height for better readability */
 }
-.contact{
-  max-width: 700px;
-  margin: auto;
+
+.contact {
+  max-width: 600px; /* Reduced width for a cleaner layout */
+  margin: 0 auto;
+  padding: 40px; /* Added padding for a more balanced layout */
+  background-color: #2b2b2b; /* Dark background for a sophisticated feel */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
-.contact input,.contact textarea{
+
+.contact input, 
+.contact textarea {
   width: 100%;
-  padding: 15px;
-  border: 0;
-  margin-bottom: 10px;
+  padding: 14px; /* More concise padding for form elements */
+  margin-bottom: 15px;
+  border: 1px solid #444; /* Subtle border for clean form elements */
+  background-color: #3b3b3b; /* Darker background for a modern look */
+  color: #fff;
+  border-radius: 6px; /* Rounded corners for a polished feel */
+  transition: border-color 0.3s ease, background-color 0.3s ease;
 }
+
+.contact input:focus, 
+.contact textarea:focus {
+  outline: none;
+  border-color: #fed700; /* Bright border to indicate focus */
+  background-color: #4a4a4a; /* Slight color change for interactivity */
+}
+
+.contact textarea {
+  resize: vertical; /* Limit resizing to vertical for better control */
+  min-height: 120px; /* Standardized minimum height */
+}
+
+.contact button {
+  display: inline-block;
+  width: 100%;
+  padding: 14px;
+  background-color: #fed700;
+  color: #1e1e1e;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #e5c500; /* Darker yellow on hover for interactivity */
+}
+
+.contact-content .contact-title h4::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #fed700;
+  margin: 12px auto 0;
+}
+
 
 /*-----------------------------------------Contact submit----------------------------*/
 
