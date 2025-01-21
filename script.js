@@ -29,7 +29,7 @@ $(document).ready(function() {
           500
         );
       } else {
-        var offset = $(target).offset().top - 40; 
+        var offset = $(target).offset().top - 35; 
   
         $("html, body").animate(
           {
@@ -47,7 +47,7 @@ $(document).ready(function() {
     //Initial content revealing js
     ScrollReveal({
       distance: "100px",
-      duration: 2000,
+      duration: 1600,
       delay: 200
     });
   
@@ -108,7 +108,9 @@ $(document).ready(function() {
         $(".header ul li a[href='#" + target + "']").addClass("active");
       }
     });
+    
   }
+
   
 
  
