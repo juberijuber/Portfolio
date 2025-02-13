@@ -330,6 +330,19 @@
             })
             
         })
+
+
+        document.addEventListener('mousemove', (e) => {
+      const ripple = document.createElement('div');
+      ripple.className = 'ripple';
+      ripple.style.left = `${e.clientX + window.scrollX}px`;
+      ripple.style.top = `${e.clientY + window.scrollY}px`;
+      document.body.appendChild(ripple);
+
+      setTimeout(() => {
+        ripple.remove();
+      }, 1000);
+    });
     </script>
     
     <style>
@@ -347,6 +360,31 @@
 
         h1, h3,h4 {
             text-shadow: 0 0 10px rgba(255,255,255,0.5);
+        }
+
+        
+        .ripple {
+            position: absolute;
+            border-radius: 100%;
+            background-color: rgb(252, 252, 0);
+            box-shadow: 0 0 10px rgba(251, 251, 251, 0.481), 0 0 10px rgba(255, 255, 255, 0.338);
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            animation: ripple-animation 1s forwards;
+            filter: blur(4px);
+            }
+        @keyframes ripple-animation {
+            
+            0% {
+                width: 0;
+                height: 0;
+                opacity: 0.25;
+            }
+            100% {
+                width: 50px;
+                height: 50px;
+                opacity: 0;
+            }
         }
 
 
