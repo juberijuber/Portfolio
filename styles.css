@@ -76,12 +76,6 @@ body{
   color:#fed700;
   
 }
-.header .menu_icon{
-  color:#fff;
-  font-size: 18px;
-  cursor: pointer;
-  display:block;
-}
 /*--------------------------Nav-----------------------*/
 
 .navbar a {
@@ -608,9 +602,6 @@ body{
     width: 350px;
   }
 
-  .header .menu_icon {
-    display: block;
-  }
   .header ul{
     display: none;
   }
