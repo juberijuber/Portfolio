@@ -29,7 +29,7 @@ $(document).ready(function() {
           500
         );
       } else {
-        var offset = $(target).offset().top - 35; 
+        var offset = $(target).offset().top - 50; 
   
         $("html, body").animate(
           {
@@ -47,14 +47,14 @@ $(document).ready(function() {
     //Initial content revealing js
     ScrollReveal({
       distance: "100px",
-      duration: 1600,
+      duration: 1200,
       delay: 200
     });
   
-    ScrollReveal().reveal(".header a, .profile-photo, .about-content, .education", {
+    ScrollReveal().reveal(" .profile-photo, .about-content, .education", {
       origin: "left"
     });
-    ScrollReveal().reveal(".header ul, .profile-text, .about-skills, .internship", {
+    ScrollReveal().reveal(" .profile-text, .about-skills, .internship", {
       origin: "right"
     });
     ScrollReveal().reveal(".project-title, .contact-title", {
