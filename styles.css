@@ -418,6 +418,7 @@ body{
     text-align: center;
     flex-basis: 32%;
     transition: .3s;
+    margin-bottom: 30px; /* Added margin for spacing between projects */
 }
 .project i{
   background-color: #fed700;
