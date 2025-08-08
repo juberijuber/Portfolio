@@ -12,6 +12,7 @@ ul{
 }
 img{
   max-width: 100%;
+  
 }
 body{
   font-family: 'Lexend', sans-serif;
@@ -647,6 +648,8 @@ body{
   .project{
     flex-basis: 100%;
     margin-bottom: 30px;
+    
+
   }
 
 }
