@@ -409,17 +409,19 @@ body{
   flex-wrap: wrap;
 }
 .project{
-    /* padding: 30px 15px; */
-    color: #e5e5e5;
-    border: 2px solid #e5e5e5;
-    border-radius: 10px;
-    width: 100%;
-    position: relative;
-    padding: 25px;
-    text-align: center;
-    flex-basis: 32%;
-    transition: .3s;
-    margin-bottom: 30px; /* Added margin for spacing between projects */
+  /* padding: 30px 15px; */
+  color: #e5e5e5;
+  border: 2px solid #e5e5e5;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  padding: 25px;
+  text-align: center;
+  flex-basis: 32%;
+  transition: .3s;
+  margin-bottom: 30px; /* Added margin for spacing between projects */
+  background-color: #2c2b2b;
+  cursor: pointer;
 }
 .project i{
   background-color: #fed700;
@@ -440,8 +442,13 @@ body{
 }
 .project:hover{
   border-color: #fed700;
+  box-shadow: 0 0 15px #fed700;
 }
-
+.project-link{
+  text-decoration: none;
+  display: block;       /* so it fills layout like the .project did */
+  color: inherit;       /* keep text color from .project */
+}
 
 
 /*---------------------------Contact Me---------------------------*/
